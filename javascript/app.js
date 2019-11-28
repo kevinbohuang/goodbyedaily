@@ -37,8 +37,8 @@ function keyTyped(){
 	let w = new Word(pos.x, pos.y, "❤️")
 	words.push(w)
 
-	pos.x = pos.x + 50
+	pos.x = pos.x + Math.floor(Math.random() * 1000)
 	if (pos.x > windowWidth - 100) {
-		pos.x = 100
+		pos.x = Math.floor(Math.random() * 100)
 	}
 }
